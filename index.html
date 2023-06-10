@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Emoji Chef</title>
+  </head>
+  <body>
+    <header>
+      <h1>Emoji Chef</h1>
+      <p>Seleziona 3 emoji e crea la tua ricetta</p>
+      <div class="logo">👩‍🍳</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="ingredients">
+          <div class="ingredient">🥩</div>
+          <div class="ingredient">🍅</div>
+          <div class="ingredient">🧀</div>
+          <div class="ingredient">🍆</div>
+          <div class="ingredient">🥦</div>
+          <div class="ingredient">🐟</div>
+          <div class="ingredient">🥑</div>
+          <div class="ingredient">🍗</div>
+          <div class="ingredient">🥕</div>
+          <div class="ingredient">🥬</div>
+          <div class="ingredient">🥚</div>
+          <div class="ingredient">🥔</div>
+        </div>
+        <div class="bowl">
+          <div class="bowl-slot">?</div>
+          <div class="bowl-slot">?</div>
+          <div class="bowl-slot">?</div>
+        </div>
+        <button>Crea ricetta!</button>
+      </div>
+    </main>
+    <div class="loading hidden">
+      <img src="/assets/img/loader.gif" alt="loading" />
+      <p class="loading-message">Loading...</p>
+    </div>
+    <div class="modal">
+      <div class="modal-box">
+        <div class="modal-close">
+          <img src="/assets/img/close-button.svg" alt="close" />
+        </div>
+        <div class="recipe-image">
+          <img src="https://picsum.photos/300/200" alt="placeholder" />
+        </div>
+        <div class="recipe-content">
+          <h2>Titolo ricetta</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
+            amet doloremque voluptatibus veritatis distinctio dolore, vel
+            recusandae nisi corrupti a modi odio cupiditate labore nulla rem,
+            sunt ratione temporibus cumque voluptas quaerat dolorum ipsum
+            numquam. Quidem perspiciatis molestiae corporis dolorem?
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

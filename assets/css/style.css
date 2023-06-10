@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #ffaafb;
+  color: #1212b2;
+  line-height: 1.2;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 15px;
+}
+h2 {
+  margin-bottom: 8px;
+}
+p {
+  margin-bottom: 15px;
+}
+button {
+  border: none;
+  border-radius: 40px;
+  padding: 12px 24px;
+  background-color: #1212b2;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+img {
+  width: 100%;
+}
+header {
+  background-color: #1212b2;
+  color: #ffaafb;
+  padding: 30px 24px 0 24px;
+}
+.logo {
+  font-size: 100px;
+  line-height: 1;
+  position: relative;
+  bottom: 5px;
+}
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 24px 10px;
+}
+.container > * {
+  margin-bottom: 20px;
+}
+.ingredients {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ingredient {
+  width: 80px;
+  height: 80px;
+  background-color: #b2d1fb;
+  border: 3px solid #1212b2;
+  border-radius: 20px;
+  line-height: 2;
+  font-size: 40px;
+}
+
+.bowl {
+  background-color: #ffffff;
+  border: 3px solid #1212b2;
+  border-radius: 20px;
+  display: flex;
+}
+.bowl-slot {
+  width: 100%;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #b2d1fb;
+}
+.bowl-slot:first-child {
+  border-right: 3px solid #1212b2;
+}
+.bowl-slot:last-child {
+  border-left: 3px solid #1212b2;
+}
+.loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 170, 251, 0.85);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.loading-message {
+  color: #1212b2;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 170, 251, 0.85);
+  z-index: 999;
+  padding: 24px 16px;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.modal-box {
+  background-color: #fff;
+  border: 3px solid #1212b2;
+  position: relative;
+  min-height: 250px;
+}
+.modal-close {
+  position: absolute;
+  right: 0;
+  border: 3px solid #1212b2;
+  padding: 4px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffaafb;
+  margin: 12px;
+}
+.recipe-image {
+  background-image: url(/assets/img/loader.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+}
+.recipe-content {
+  padding: 16px 14px;
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
