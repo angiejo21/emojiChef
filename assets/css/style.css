@@ -122,6 +122,8 @@ header {
   border: 3px solid #1212b2;
   position: relative;
   min-height: 250px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 .modal-close {
   position: absolute;
