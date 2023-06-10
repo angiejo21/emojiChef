@@ -30,7 +30,7 @@ button {
   font-weight: 700;
 }
 img {
-  width: 100%;
+  max-width: 100%;
 }
 header {
   background-color: #1212b2;
@@ -142,6 +142,9 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 200px;
+}
+.recipe-image img {
+  width: 100%;
 }
 .recipe-content {
   padding: 16px 14px;
