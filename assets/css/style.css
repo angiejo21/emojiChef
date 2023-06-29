@@ -21,6 +21,10 @@ p {
   margin-bottom: 15px;
 }
 button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   border: none;
   border-radius: 40px;
   padding: 12px 24px;
@@ -32,6 +36,26 @@ button {
 img {
   max-width: 100%;
 }
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.tab-button {
+  border: 2px solid white;
+  font-size: 16px;
+}
+[data-active-tab="create"] .tab-button:not([data-tab="create"]),
+[data-active-tab="saved"] .tab-button:not([data-tab="saved"]) {
+  opacity: 0.6;
+}
+
+[data-active-tab="create"] section:not(.create-tab),
+[data-active-tab="saved"] section:not(.saved-tab) {
+  display: none;
+}
+
 header {
   background-color: #1212b2;
   color: #ffaafb;
@@ -65,6 +89,7 @@ header {
   border-radius: 20px;
   line-height: 2;
   font-size: 40px;
+  cursor: pointer;
 }
 
 .bowl {
@@ -125,6 +150,18 @@ header {
   max-width: 400px;
   margin: 0 auto;
 }
+.modal-action {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  margin: 12px;
+}
+
+[data-action="save"] > :not(.action-save),
+[data-action="remove"] > :not(.action-remove) {
+  display: none;
+}
+
 .modal-close {
   position: absolute;
   right: 0;
@@ -153,6 +190,31 @@ header {
   text-align: left;
 }
 
+.recipe-card {
+  display: flex;
+  border: 3px solid #1212b2;
+  border-radius: 20px;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: start;
+}
+.recipe-card > .thumbnail {
+  height: 120px;
+  flex: 0 0 120px;
+}
+
+.recipe-card > .content {
+  padding: 16px;
+}
+.recipe-card .title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1212b2;
+  margin-bottom: 8px;
+}
+.recipe-card .emoji {
+  font-size: 24px;
+}
 .hidden {
   display: none;
 }
