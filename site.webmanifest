@@ -1,0 +1,14 @@
+{
+  "short_name": "emojiChef",
+  "name": "Cucinare con le emoji ",
+  "icons": [
+    {
+      "src": "assets/img/icon-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ],
+  "background_color": "#ffaafb",
+  "theme_color": "#1212b2",
+  "display": "fullscreen"
+}
